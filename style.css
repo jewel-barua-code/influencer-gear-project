@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular-styles {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Header Navigation Section Styles */
+  .navbar{
+        align-items: center;
+        justify-content: space-between;
+  }
+  .brand{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+ 
+
+
+  /* Shared Section Styles */
+
+  .display-flex{
+    display: flex;
+    align-items: center;
+  }
+
+  .text-color{
+    color: #3A3A3A;
+  }
+  .btn-primary{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+  }
+
+  /* Navigation Section Styles */
+
+  .navbar, .header-container, .brand-container, .products-collection, .feature-container{
+    max-width: 1440px;
+    margin: 0px 120px;
+  }
+  .nav-links{
+    display: flex;
+    gap: 34px;
+  }
+
+  .nav-item{
+    list-style: none;
+    font-size: 1rem;
+  }
+  .nav-link{
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Header Section */
+
+  .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ .heading-main{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 70px;
+    width: 582px;
+ }
+
+ .heading-description{
+    width: 505px;
+    font-size: 1rem;
+    font-weight: 500;
+ }
+
+ .btn{
+    width: 196px;
+    height: 44px;
+    border: none;
+    border-radius: 41px;
+ }
+
+ .img-container{
+    background: url('/images/Circle design.svg');
+ }
+
+ /* Brand Section */
+.brand-container{
+   margin-top: 100px;
+   justify-content: center;
+   gap: 60px;
+}
+ 
+
+
+
+ /* Feature Section */
+
+ .feature-container{
+    display: flex;
+    margin-top: 174px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .feature-items{
+    margin-left: 96px;
+ }
+ .feature-title{
+    width: 610px;
+    font-size: 38px;
+    font-weight: 700;
+ }
+ .feature-description{
+    width: 501px;
+    font-size: 16px;
+    font-weight: 500;
+ }
+ .btn-2{
+    width: 155px;
+    height: 44px;
+    border: none;
+ }
+
+ /* Responsive Section */
+ @media screen and (max-width: 576px) {
+    .header-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .heading-main{
+        font-size: 28px;
+        text-align: center;
+    }
+    .heading-description{
+        text-align: center;
+        font-size: 14px;
+    }
+    .products-container{
+        
+        grid-template-columns: repeat(1, 1fr);
+        
+     }
+
+     .feature-container{
+         flex-direction: column-reverse;
+     }
+ }
